@@ -1,19 +1,27 @@
-def add(arg1,arg2)
-  sum = arg1 + arg2
-  return sum
+def add(x, y)
+	x + y
 end
 
-def subtract(arg1,arg2)
-  sum = arg1 - arg2
-  return sum
+def subtract(x, y)
+	x - y
 end
 
-def sum(arg1)
-  sum = 0
-  if argl.empty? == false
-    argl.each do |a|
-      sum = sum + a
-    end
+def sum(array)
+	count = 0
+	array.each {|x| count = count + x}
+	count
+end
 
-  return sum
+def multiply(x, y)
+	x * y
+end
+
+def power(x, p)
+	x**p
+end
+
+def factorial(n)
+	facto = 1
+	n.downto(1) {|i| facto = facto * i if (n != 1 && n != 0)}
+	facto
 end
